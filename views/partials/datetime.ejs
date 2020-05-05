@@ -1,5 +1,5 @@
 <script>
-    function date_time(id) {
+    window.onload = function() {
         date = new Date;
         year = date.getFullYear();
         month = date.getMonth();
@@ -20,8 +20,8 @@
             s = "0" + s;
         }
         result = 'วัน' + days[day] + ' ' + d + ' ' + months[month] + ' ' + (year + 543) + ' เวลา ' + h + ':' + m + ':' + s + ' น.';
-        document.getElementById(id).innerHTML = result;
-        setTimeout('date_time("' + id + '");', '1000');
+        document.getElementById('date').innerHTML = result;
+        setTimeout('date_time("date");', '1000');
         return true;
     }
 </script>

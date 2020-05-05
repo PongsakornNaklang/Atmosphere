@@ -1,14 +1,13 @@
 <%- include('partials/header.ejs') -%>
 
-    <body onload="date_time('date')">
+    <body>
         <div class="container" style="text-align: center">
-
             <div id="chart_pm25"></div>
-
-
             <p id="date"></p>
-            <h1 style="color: <%= colorst %>">
-                <%= status %>
+            <h1>
+                <status>
+                    <%= status %>
+                </status>
             </h1>
             <h1 style="margin-bottom: 30px;">
                 <%= pm2_5 %> µg/m<sup>3</sup>
