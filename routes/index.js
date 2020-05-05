@@ -8,7 +8,6 @@ module.exports = {
         var colorst = "#333";
         var gcolor = "#ABE5A1";
 
-
         request(url, { json: true }, (err, resofreq, body) => {
             var val = body.field1;
             if (err) {
@@ -46,8 +45,5 @@ module.exports = {
             });
             console.log(body);
         });
-
-
-
     }
 }
